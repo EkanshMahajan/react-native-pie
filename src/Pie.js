@@ -223,7 +223,7 @@ const Pie = ({
   strokeCap,
   dividerSize,
 }) => {
-  strokeCapForLargeBands =
+  const strokeCapForLargeBands =
     dividerSize > 0 || strokeCap == 'butt' ? 'butt' : 'butt';
   const shouldShowRoundDividers = strokeCap === 'round';
   let paintedSections = [];
